@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.bg-white {
+  background-color: #fbf2f2;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-red {
+  background-color: #aa0601;
+}
+
+.font-color-red {
+  color: #650300;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* header */
+.header .d-flex {
+  flex-wrap: wrap;
+}
+
+.header .container a img {
+  width: 80px;
+  height: 48px;
+  margin: 12px 0;
+}
+
+/* nav */
+.nav li a {
+  padding: 8px 32px;
+  color: #ffffff;
+}
+
+/* banner */
+.banner {
+  height: calc(100vh - 80px);
+  background-image: url("../image/home-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-bg {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.banner-main-title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.banner-subtitle {
+  font-size: 36px;
+}
+
+.banner-btn {
+  padding: 6px 12px;
+  color: #ffffff;
+  background-color: #aa0601;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .banner-bg {
+    background-image: url("../image/home-header-sm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-sm-no-padding {
+    padding: 0;
+  }
+
+  .header .container a img {
+    margin: 12px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav li {
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ffffff;
+  }
+
+  .nav li a {
+    width: 100%;
+    padding: 12px 0;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+}
